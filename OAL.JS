@@ -13,8 +13,8 @@ ASSIGNMENT RULES
  Create a variable and assign to it an array containing the first 5 positive numbers.
 */
 console.log("\n.....ex1....answer")
-const numbers= ["1,2,3,4,5"] 
-
+const positiveNumbers= ["1,2,3,4,5"] 
+console.log(positiveNumbers)
 /* EXERCISE 2
  Create a variable and assign to it an object containing your name, surname, email address and age.
 */
@@ -102,6 +102,7 @@ You are working on an e-commerce website. Today is Black Friday and everything h
  Modify the previous answer inserting this information and, applying the same rules for the shipping cost, calculate the totalCost.
 */
 console.log("\n....ex7...answer")
+
 
 
 
