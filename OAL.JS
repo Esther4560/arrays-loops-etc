@@ -86,11 +86,6 @@ console.log(compareEmailAddress)
 
 console.log("\n.....ex6....answer")
 
-/* EXERCISE 7 
-You are working on an e-commerce website. Today is Black Friday and everything has a 20% discount at the end of the purchase.
- Modify the previous answer inserting this information and, applying the same rules for the shipping cost, calculate the totalCost.
-*/
-console.log("\n....ex7...answer")
 let totalShoppingCart = 30//currency:euros
 let eligibility
 if ( totalShoppingCart > 50){
@@ -101,6 +96,14 @@ else {
     eligibility ="10"
 }
 console.log(eligibility)
+
+/* EXERCISE 7 
+You are working on an e-commerce website. Today is Black Friday and everything has a 20% discount at the end of the purchase.
+ Modify the previous answer inserting this information and, applying the same rules for the shipping cost, calculate the totalCost.
+*/
+console.log("\n....ex7...answer")
+
+
 
 /* EXERCISE 8
  Create a variable and assign to it an object representing a car, with properties like brand, model and licensePlate.
