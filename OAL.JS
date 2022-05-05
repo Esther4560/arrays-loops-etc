@@ -37,7 +37,7 @@ console.log("\n.....ex3....answer")
     name:"Chinagorom Esther",
     surname: "Nomeh",
     emailAddress:"mypotatoes@gmail.com",
-    age:27,
+    age:"27",
     DrivingLicence: true 
  }
     console.log(person);
@@ -50,7 +50,7 @@ var person = {
     name:"Chinagorom Esther",
     surname: "Nomeh",
     emailAddress:"mypotatoes@gmail.com",
-    age:27,
+    age:"27",
     DrivingLicence: true 
  }
 delete person.age;
@@ -64,13 +64,13 @@ console.log("\n.....ex5....answer")
     name:"Chinagorom Esther",
     surname: "Nomeh",
     emailAddress:"mypotatoes@gmail.com",
-    age:27,
+    age:"27",
  }
 
 var person2 = {
     name:"chioma",
     surname:"igboke",
-    age:27,
+    age:"27",
     emailAddress:"strawberrries@gmail.com",
     
 
@@ -86,7 +86,7 @@ console.log(compareEmailAddress)
 
 console.log("\n.....ex6....answer")
 
-let totalShoppingCart = 30//currency:euros
+let totalShoppingCart = 40//currency:Euros
 let eligibility
 if ( totalShoppingCart > 50){
     eligibility ="Qualifies for free shipping"
@@ -101,43 +101,116 @@ console.log(eligibility)
 You are working on an e-commerce website. Today is Black Friday and everything has a 20% discount at the end of the purchase.
  Modify the previous answer inserting this information and, applying the same rules for the shipping cost, calculate the totalCost.
 */
-console.log("\n....ex7...answer")
+console.log("\n....ex7...answer\n")
 
+totalShoppingCart = 40//currency: Euros
+let discount = 20// percent,
+shippingCost = 10
+let discountedTotalShoppingCart = 40*0.8
 
+ if (discountedTotalShoppingCart>50){
+     console.log("qualifies for free shipping, the total is" + discountedTotalShoppingCart)
+ }
+ else {
+     console.log("no free shipping, the total is" + (discountedTotalShoppingCart+10))
+ }
+ totalShoppingCart=discountedTotalShoppingCart+shippingCost
+
+ console.log(totalShoppingCart)
 
 
 /* EXERCISE 8
  Create a variable and assign to it an object representing a car, with properties like brand, model and licensePlate.
  Then clone it 5 times, and change the licensePlate for each cloned car without affecting the original one.
 */
+console.log("\n...ex8...answer\n")
+let car={
+    brand:"porshe",
+    model:"porshe 911",
+    licensePlate:"BD51 SMR",
+}
+console.log(car)
 
-/* WRITE YOUR ANSWER HERE */
+let car2 = {
+    brand:"porshe",
+    model:"porshe 911",
+    licensePlate : "BAY 4567"
+}
+console.log(car2)
+
+let car3 ={
+    brand:"porshe",
+    model:"porshe 911",
+     licensePlate : "NCE 4567"
+}
+console.log(car3)
+
+let car4 = {
+    brand:"porshe",
+    model:"porshe 911",
+    licensePlate :"NHT 6789"
+}
+console.log(car4)
+
+let car5 = {
+    brand:"porshe",
+    model:"porshe 911",
+    licensePlate: "UTH 6478"
+}
+console.log(car5)
+
+let car6 = {
+    brand:"porshe",
+    model:"porshe 911",
+    licensePlate :"JIG 3728"
+}
+console.log(car6)
 
 /* EXERCISE 9
  Create a variable called carsForRent and assign to it an array containing all the cars from the previous exercise.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const arrayCarForRent=["car, car2,car3,car4,car5,car6"]
+
+console.log(arrayCarForRent)
 
 /* EXERCISE 10
  Remove the first and the last car from the carsForRent array.
 */
 
-/* WRITE YOUR ANSWER HERE */
+console.log("\n....ex10....answer \n")
+
+let arraycarForRent=["car", "car2","car3","car4","car5","car6"];
+arraycarForRent.shift();
+arraycarForRent.pop();
+
+console.log(arraycarForRent)
 
 /* EXERCISE 11
  Print to the console the type of the car variable you created before, as well as the types of its licensePlate and brand properties.
 */
 
-/* WRITE YOUR ANSWER HERE */
+
 
 /* EXERCISE 12
  Create a new variable called carsForSale assigning to it an empty array, and then insert 3 cars into it.
  Create a new variable called totalCars and assign to it the total number of cars present in the carsForSale and carsForRent arrays.
 */
+console.log("\n...ex12..answer")
 
-/* WRITE YOUR ANSWER HERE */
+let carsForSale=[]
+console.log(carsForSale)
 
+carsForSale.push("car","car2","car3");
+console.log(carsForSale)
+
+arrayCarForRent=["6"]
+carsForSale=["3"]
+let  totalCars = arrayCarForRent.map(function (num, idx) {
+    return num ,+ carsForSale[idx];
+  });
+
+    console.log(totalCars)
 /* EXERCISE 13
  Using a loop, print to the console all the data for each car in the carsForSale array.
 */
