@@ -191,7 +191,8 @@ console.log(arraycarForRent)
 */
 console.log("\n...ex11..answer")
 
-console.log(typeof car, typeof car.licensePlate, typeof car.brand);
+console.log(car, car.licensePlate, car.brand);
+
 
 
 /* EXERCISE 12
@@ -206,14 +207,16 @@ console.log(carsForSale)
 carsForSale.push("car","car2","car3");
 console.log(carsForSale)
 
-arrayCarForRent=["6"]
-carsForSale=["3"]
-let  totalCars = arrayCarForRent+carsForSale;
-
-    console.log(totalCars)
-/* EXERCISE 13
+carsForSale = ["car", "car2", "car3"];
+let totalCars = {
+  carsForSale: carsForSale.length,
+  arrayCarsForRent: arrayCarForRent.length,
+};
+console.log(totalCars)
+/*
  Using a loop, print to the console all the data for each car in the carsForSale array.
 */
+console.log("\n...ex13.answer")
 
 for (let i = 0; i < carsForSale.length; i++) {
     console.log(carsForSale[i].brand);
