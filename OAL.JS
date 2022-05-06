@@ -189,7 +189,9 @@ console.log(arraycarForRent)
 /* EXERCISE 11
  Print to the console the type of the car variable you created before, as well as the types of its licensePlate and brand properties.
 */
+console.log("\n...ex11..answer")
 
+console.log(typeof car, typeof car.licensePlate, typeof car.brand);
 
 
 /* EXERCISE 12
@@ -206,16 +208,18 @@ console.log(carsForSale)
 
 arrayCarForRent=["6"]
 carsForSale=["3"]
-let  totalCars = arrayCarForRent.map(function (num, idx) {
-    return num ,+ carsForSale[idx];
-  });
+let  totalCars = arrayCarForRent+carsForSale;
 
     console.log(totalCars)
 /* EXERCISE 13
  Using a loop, print to the console all the data for each car in the carsForSale array.
 */
 
-/* WRITE YOUR ANSWER HERE */
+for (let i = 0; i < carsForSale.length; i++) {
+    console.log(carsForSale[i].brand);
+    console.log(carsForSale[i].model);
+    console.log(carsForSale[i].licensePlate);
+  }
 
 /* WHEN YOU ARE FINISHED
  Upload the .js file on Eduflow before 5PM CET. In the next days we'll also learn how to use GIT!
