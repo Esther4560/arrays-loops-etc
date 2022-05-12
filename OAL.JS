@@ -170,7 +170,7 @@ console.log(car6)
  Create a variable called carsForRent and assign to it an array containing all the cars from the previous exercise.
 */
 
-const arrayCarForRent=["car, car2,car3,car4,car5,car6"]
+let arrayCarForRent=["car, car2,car3,car4,car5,car6"]
 
 console.log(arrayCarForRent)
 
